@@ -1,14 +1,25 @@
 // Heaven Hotel Website JavaScript
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle - Simple version
 function toggleMobileMenu() {
     const navMenu = document.querySelector('.nav-menu');
     const hamburger = document.querySelector('.hamburger');
-    if (navMenu && hamburger) {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    }
+    
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
 }
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Add touch event for mobile
+    const hamburger = document.querySelector('.hamburger');
+    if (hamburger) {
+        hamburger.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            toggleMobileMenu();
+        });
+    }
+});
 
 // Booking Modal Functions
 function openBookingModal() {
