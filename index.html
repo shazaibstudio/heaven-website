@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven Hotel Lahore - We Spell Hospitality</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo no background .png" alt="Heaven Hotel Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h2>Heaven Hotel</h2>
+                        <span>Lahore</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Accommodations</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#virtual-tour">Virtual Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-reserve" onclick="openBookingModal()">Reserve</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-line"></span>
+                <span class="badge-text">We Spell Hospitality</span>
+                <span class="badge-line"></span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-main">Heaven Hotel</span>
+                <span class="title-sub">Lahore</span>
+            </h1>
+            <p class="hero-description">An oasis of luxury in the heart of DHA, where timeless elegance meets modern sophistication</p>
+            <div class="hero-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Khayaban-e-Jinnah, Main DHA Gate • 7km from Airport</span>
+            </div>
+        </div>
+        
+        <div class="booking-panel">
+            <div class="booking-container">
+                <div class="booking-header">
+                    <h3>Reserve Your Experience</h3>
+                    <div class="booking-guarantee">Best Rate Guaranteed</div>
+                </div>
+                <form class="booking-form">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label>Arrival</label>
+                            <input type="date" id="checkin" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Departure</label>
+                            <input type="date" id="checkout" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Guests</label>
+                            <select id="guests">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <button type="button" class="btn-search" onclick="searchRooms()">
+                                <span>Check Availability</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="accommodations">
+        <div class="container">
+            <div class="section-intro">
+                <div class="section-badge">Accommodations</div>
+                <h2 class="section-title">Luxury Redefined</h2>
+                <p class="section-description">44 meticulously designed rooms and suites, each a sanctuary of comfort and elegance</p>
+            </div>
+            
+            <div class="rooms-showcase">
+                <div class="room-card featured">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop" alt="Executive Suite">
+                        <div class="room-overlay">
+                            <button class="btn-view" onclick="viewRoom('executive')">View Suite</button>
+                        </div>
+                    </div>
+                    <div class="room-details">
+                        <div class="room-category">Signature</div>
+                        <h3 class="room-name">Executive Suite</h3>
+                        <p class="room-excerpt">The pinnacle of luxury with panoramic city views and exclusive amenities</p>
+                        <div class="room-amenities">
+                            <span class="amenity"><i class="fas fa-utensils"></i>Breakfast Included</span>
+                            <span class="amenity"><i class="fas fa-plane"></i>Airport Transfer</span>
+                            <span class="amenity"><i class="fas fa-wifi"></i>Complimentary WiFi</span>
+                            <span class="amenity"><i class="fas fa-concierge-bell"></i>24/7 Concierge</span>
+                        </div>
+                        <div class="room-booking">
+                            <div class="room-rate">Available Year-Round</div>
+                            <button class="btn-book" onclick="bookRoom('executive')">Reserve Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rooms-grid">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop" alt="Deluxe Room">
+                        </div>
+                        <div class="room-details">
+                            <div class="room-category">Premium</div>
+                            <h3 class="room-name">Deluxe Room</h3>
+                            <p class="room-excerpt">Spacious comfort with modern amenities and elegant furnishings</p>
+                            <div class="room-features">
+                                <span>• King Size Bed</span>
+                                <span>• City View</span>
+                                <span>• Work Desk</span>
+                            </div>
+                            <button class="btn-book-small" onclick="bookRoom('deluxe')">Book</button>
+                        </div>
+                    </div>
+                    
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&h=400&fit=crop" alt="Standard Room">
+                        </div>
+                        <div class="room-details">
+                            <div class="room-category">Classic</div>
+                            <h3 class="room-name">Standard Room</h3>
+                            <p class="room-excerpt">Contemporary comfort with all essential amenities</p>
+                            <div class="room-features">
+                                <span>• Queen Bed</span>
+                                <span>• Modern Bath</span>
+                                <span>• Free WiFi</span>
+                            </div>
+                            <button class="btn-book-small" onclick="bookRoom('standard')">Book</button>
+                        </div>
+                    </div>
+                    
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600&h=400&fit=crop" alt="Mini Suite">
+                        </div>
+                        <div class="room-details">
+                            <div class="room-category">Suite</div>
+                            <h3 class="room-name">Mini Suite</h3>
+                            <p class="room-excerpt">Separate living area with enhanced comfort and space</p>
+                            <div class="room-features">
+                                <span>• Living Area</span>
+                                <span>• Premium Bath</span>
+                                <span>• Minibar</span>
+                            </div>
+                            <button class="btn-book-small" onclick="bookRoom('mini-suite')">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="dining">
+        <div class="container">
+            <div class="dining-content">
+                <div class="dining-text">
+                    <div class="section-badge">Culinary Excellence</div>
+                    <h2 class="section-title">Exquisite Dining</h2>
+                    <p class="section-description">Savor the finest flavors in an atmosphere of refined elegance, where every meal becomes a memorable experience.</p>
+                    <div class="dining-features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h4>Fine Dining Restaurant</h4>
+                                <p>International cuisine with local specialties</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-coffee"></i>
+                            <div>
+                                <h4>Elegant Lounge</h4>
+                                <p>Premium beverages and light refreshments</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-concierge-bell"></i>
+                            <div>
+                                <h4>Room Service</h4>
+                                <p>24-hour gourmet dining in your room</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary" onclick="openDiningModal()">View Menu</button>
+                </div>
+                <div class="dining-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&h=500&fit=crop" alt="Fine Dining">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences">
+        <div class="container">
+            <div class="section-intro centered">
+                <div class="section-badge">Experiences</div>
+                <h2 class="section-title">Beyond Accommodation</h2>
+                <p class="section-description">Discover exceptional services designed to elevate your stay</p>
+            </div>
+            
+            <div class="experiences-grid">
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Business Meetings</h3>
+                    <p>State-of-the-art conference facilities with professional support services</p>
+                    <a href="#contact" class="experience-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Event Planning</h3>
+                    <p>Memorable celebrations and corporate events with dedicated event coordination</p>
+                    <a href="#contact" class="experience-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Airport Transfer</h3>
+                    <p>Seamless transportation service just 7km from Lahore Airport</p>
+                    <a href="#contact" class="experience-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Concierge Services</h3>
+                    <p>Personalized assistance to enhance every aspect of your stay</p>
+                    <a href="#contact" class="experience-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Section -->
+    <section id="virtual-tour" class="virtual-tour">
+        <div class="container">
+            <div class="section-intro">
+                <div class="section-badge">Virtual Experience</div>
+                <h2 class="section-title">360° Hotel Tour</h2>
+                <p class="section-description">Explore Heaven Hotel from the comfort of your home with our immersive virtual tour</p>
+            </div>
+            
+            <div class="tour-container">
+                <iframe 
+                    src="https://www.sqinteractive.com/SQ-Tours/heaven%20hotel%20360/" 
+                    frameborder="0" 
+                    allowfullscreen
+                    title="Heaven Hotel 360 Virtual Tour">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-badge">Get in Touch</div>
+                    <h2 class="section-title">Contact Heaven Hotel</h2>
+                    <p class="section-description">We're here to assist you with reservations, inquiries, and any special requests</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>Khayaban-e-Jinnah, Main DHA Gate<br>Lahore Cantt., Pakistan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+92 42 35899815</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>rsvn@heavenhotel.com.pk</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Airport Distance</h4>
+                                <p>7km from Lahore Airport</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label>Full Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Email Address</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Phone Number</label>
+                                <input type="tel">
+                            </div>
+                            <div class="form-field">
+                                <label>Subject</label>
+                                <select required>
+                                    <option value="">Select a subject</option>
+                                    <option value="reservation">Room Reservation</option>
+                                    <option value="event">Event Planning</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-field full-width">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="How can we assist you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo no background .png" alt="Heaven Hotel Logo" class="footer-logo-image">
+                        <div class="logo-text">
+                            <h3>Heaven Hotel</h3>
+                            <span>Lahore</span>
+                        </div>
+                    </div>
+                    <p>We Spell Hospitality</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +92 42 35899815</p>
+                        <p><i class="fas fa-envelope"></i> rsvn@heavenhotel.com.pk</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Accommodations</h4>
+                        <ul>
+                            <li><a href="#rooms">Executive Suite</a></li>
+                            <li><a href="#rooms">Deluxe Room</a></li>
+                            <li><a href="#rooms">Standard Room</a></li>
+                            <li><a href="#rooms">Mini Suite</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#dining">Fine Dining</a></li>
+                            <li><a href="#experiences">Business Meetings</a></li>
+                            <li><a href="#experiences">Event Planning</a></li>
+                            <li><a href="#experiences">Airport Transfer</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Location</h4>
+                        <ul>
+                            <li>Khayaban-e-Jinnah</li>
+                            <li>Main DHA Gate</li>
+                            <li>Lahore Cantt.</li>
+                            <li>7km from Airport</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Heaven Hotel Lahore. All rights reserved.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Reserve Your Stay</h3>
+                <span class="close" onclick="closeBookingModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form class="reservation-form">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label>Check-in Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Check-out Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Number of Guests</label>
+                            <select required>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Room Type</label>
+                            <select required>
+                                <option value="">Select Room</option>
+                                <option value="executive">Executive Suite</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="standard">Standard Room</option>
+                                <option value="mini-suite">Mini Suite</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Full Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Email</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Phone</label>
+                            <input type="tel" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Special Requests</label>
+                            <textarea rows="3" placeholder="Any special requirements?"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn-secondary" onclick="closeBookingModal()">Cancel</button>
+                        <button type="submit" class="btn-primary">Confirm Reservation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
