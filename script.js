@@ -1,12 +1,24 @@
 // Heaven Hotel Website JavaScript
 
+// Mobile Menu Toggle
+function toggleMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    if (navMenu && hamburger) {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    }
+}
+
 // Booking Modal Functions
 function openBookingModal() {
     document.getElementById('bookingModal').style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
 }
 
 function closeBookingModal() {
     document.getElementById('bookingModal').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restore scrolling
 }
 
 // Search Rooms Function
@@ -39,6 +51,10 @@ function viewRoom(roomType) {
     alert(`Viewing ${roomType} details`);
 }
 
+function openDiningModal() {
+    alert('Menu will be available soon!');
+}
+
 // Smooth Scrolling for Navigation
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -50,9 +66,21 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetSection = document.querySelector(targetId);
             
             if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                // Close mobile menu if open
+                const navMenu = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+                
+                // Smooth scroll with offset for fixed header
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
                 });
             }
         });
@@ -72,6 +100,36 @@ document.addEventListener('DOMContentLoaded', function() {
     if (checkoutInput) {
         checkoutInput.value = tomorrow.toISOString().split('T')[0];
     }
+    
+    // Add hamburger click event
+    const hamburger = document.querySelector('.hamburger');
+    if (hamburger) {
+        hamburger.addEventListener('click', toggleMobileMenu);
+    }
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const navMenu = document.querySelector('.nav-menu');
+        const hamburger = document.querySelector('.hamburger');
+        const navContainer = document.querySelector('.nav-container');
+        
+        if (navMenu.classList.contains('active') && 
+            !navContainer.contains(e.target)) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        const navMenu = document.querySelector('.nav-menu');
+        const hamburger = document.querySelector('.hamburger');
+        
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+    });
 });
 
 // Close modal when clicking outside
@@ -81,12 +139,6 @@ window.addEventListener('click', function(event) {
         closeBookingModal();
     }
 });
-
-// Mobile Menu Toggle
-function toggleMobileMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('active');
-}
 
 // Form Submissions
 document.addEventListener('DOMContentLoaded', function() {
@@ -110,4 +162,17 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
         });
     }
+    
+    // Improve form accessibility on mobile
+    const inputs = document.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            // Scroll input into view on mobile
+            if (window.innerWidth <= 768) {
+                setTimeout(() => {
+                    this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 300);
+            }
+        });
+    });
 });
