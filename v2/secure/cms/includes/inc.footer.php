@@ -1,0 +1,1 @@
+<div class="footer clear"> <span class="copy"><strong>&copy; <?=date('Y');?> Copyright <?=COMPANY_NAME;?>.</a></strong></span></div>

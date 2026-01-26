@@ -1,0 +1,8 @@
+[23-Aug-2025 00:59:14 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/heavenho/public_html/wordpress/wp-includes/class-simplepie.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/heavenho/public_html/wordpress/wp-includes/class-simplepie.php on line 8
+[07-Nov-2025 19:25:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/heavenho/public_html/wordpress/wp-includes/class-simplepie.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/heavenho/public_html/wordpress/wp-includes/class-simplepie.php on line 8

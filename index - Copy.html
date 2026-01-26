@@ -1,0 +1,1313 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Heaven Hotel - Luxury Accommodation in DHA Lahore</title>
+    <meta name="description" content="Experience luxury hospitality at Heaven Hotel, DHA Lahore. Premium rooms, authentic cuisine, and exceptional service in the heart of Pakistan.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Heaven Hotel, Lahore, DHA, luxury hotel, Pakistan, accommodation, restaurant">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.4.custom.min.css">
+    <link rel="stylesheet" href="rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/colors/turquoise.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600,700&display=swap">
+    
+    <!-- JavaScript -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/jquery.jigowatt.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.gmap.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/custom.js"></script>
+
+<script>
+// Mobile room card flip functionality
+$(document).ready(function() {
+    if ($(window).width() <= 767) {
+        $('.room-thumb').each(function() {
+            var $card = $(this);
+            var $img = $card.find('img');
+            var $mask = $card.find('.mask');
+            var $main = $mask.find('.main');
+            var $content = $mask.find('.content');
+            
+            // Create flip structure
+            var frontContent = '<div class="flip-front">' + $img[0].outerHTML + $mask[0].outerHTML + '</div>';
+            var backContent = '<div class="flip-back">' +
+                '<div class="main">' +
+                    '<h5>' + $main.find('h5').text() + '</h5>' +
+                    '<div class="price">' + $main.find('.price').html() + '</div>' +
+                '</div>' +
+                '<div class="content">' +
+                    ($content.find('p').length ? $content.find('p')[0].outerHTML : '') +
+                    $content.find('.row')[0].outerHTML +
+                    '<a class="btn btn-primary btn-block" href="room-list.html">Read More</a>' +
+                '</div>' +
+            '</div>';
+            
+            $card.html('<div class="flip-container">' + frontContent + backContent + '</div>');
+            
+            // Add click handler
+            $card.on('click', function(e) {
+                e.preventDefault();
+                $(this).toggleClass('flipped');
+            });
+        });
+    }
+});
+</script><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body><!-- Top header -->
+<div id="top-header">
+<div class="container">
+<div class="row">
+<div class="col-xs-6">
+<div class="th-text pull-right">
+<div class="th-item"><a href="#">+92 42 35899815 </a></div>
+
+<div class="th-item"><a href="mailto:rsvn@heavenhotel.com.pk">rsvn@heavenhotel.com.pk</a></div>
+</div>
+</div>
+
+<div class="col-xs-6">
+<div class="th-text pull-left">
+<div class="th-item">
+<div class="btn-group"><button class="btn btn-default btn-xs dropdown-toggle js-activated" data-toggle="dropdown" type="button">English</button>
+
+<ul class="dropdown-menu">
+	<li><a href="#">ENGLISH</a></li>
+	<li><a href="#">FRANCE</a></li>
+	<li><a href="#">GERMAN</a></li>
+	<li><a href="#">SPANISH</a></li>
+</ul>
+</div>
+</div>
+
+<div class="th-item">
+<div class="social-icons"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Header -->
+
+<header><!-- Navigation -->
+<div class="navbar yamm navbar-default" id="sticky" style="border: none; margin-bottom: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: 0 2px 15px rgba(0,0,0,0.1); min-height: 70px;">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#navbar-collapse-grid" data-toggle="collapse" type="button" style="border: 2px solid #17a2b8; background: transparent; margin-top: 18px; margin-bottom: 18px;">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar" style="background: #17a2b8;"></span>
+<span class="icon-bar" style="background: #17a2b8;"></span>
+<span class="icon-bar" style="background: #17a2b8;"></span>
+</button>
+
+<div id="logo" style="float: left; margin-top: 13px;"><a class="navbar-brand" href="index.html" style="padding: 0; margin: 0; height: auto;"><img alt="Heaven Hotel" id="default-logo" src="images/logo.png" style="height:44px; max-width: 180px;" /> <img alt="Heavenhotel" id="retina-logo" src="images/logo-retina.png" style="height:44px; max-width: 180px;" /> </a></div>
+</div>
+
+<div class="navbar-collapse collapse" id="navbar-collapse-grid">
+<ul class="nav navbar-nav" style="float: right; margin-top: 18px;">
+	<li class="dropdown active"><a href="index.html" style="color: #17a2b8; font-weight: 600; padding: 12px 18px; transition: all 0.3s ease; border-radius: 25px; margin: 0 3px;">Home</a></li>
+	<li><a href="room-list.html" style="color: #333; font-weight: 500; padding: 12px 18px; transition: all 0.3s ease; border-radius: 25px; margin: 0 3px;">Rooms</a></li>
+	<li><a href="restaurant.html" style="color: #333; font-weight: 500; padding: 12px 18px; transition: all 0.3s ease; border-radius: 25px; margin: 0 3px;">Restaurant</a></li>
+	<li><a href="business.html" style="color: #333; font-weight: 500; padding: 12px 18px; transition: all 0.3s ease; border-radius: 25px; margin: 0 3px;">Business</a></li>
+	<li><a href="event.html" style="color: #333; font-weight: 500; padding: 12px 18px; transition: all 0.3s ease; border-radius: 25px; margin: 0 3px;">Events</a></li>
+	<li><a href="contact.html" style="background: #17a2b8; color: white; font-weight: 600; padding: 10px 22px; transition: all 0.3s ease; border-radius: 25px; margin: 0 3px; border: 2px solid #17a2b8;">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<style>
+/* OPTIMIZED GLOBAL STYLES */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+img { max-width: 100%; height: auto; }
+.table-responsive { overflow-x: auto; }
+
+/* NAVIGATION OPTIMIZATIONS */
+.navbar-nav > li > a {
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    margin: 0 3px;
+    padding: 12px 18px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+    background: #17a2b8 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(23, 162, 184, 0.3);
+}
+
+.navbar-nav > li:last-child > a:hover {
+    background: #138496 !important;
+    box-shadow: 0 5px 15px rgba(19, 132, 150, 0.4);
+}
+
+.navbar.navbar-fixed-top {
+    background: rgba(255,255,255,0.98) !important;
+    backdrop-filter: blur(15px);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1200px) {
+    .container { padding: 0 20px; }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav { float: none !important; text-align: center; }
+    .navbar-nav li { display: inline-block; }
+    
+    /* Logo positioning fix */
+    #logo { float: none !important; text-align: center; margin: 10px 0; }
+    .navbar-brand { float: none !important; }
+}
+
+@media (max-width: 767px) {
+    /* Navigation */
+    .navbar-nav { float: none !important; text-align: center; }
+    .navbar-nav li { display: inline-block; }
+    
+    /* Logo mobile fix */
+    #logo {
+        text-align: center;
+        float: none !important;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .navbar-brand {
+        float: none !important;
+        display: inline-block;
+    }
+    
+    /* Revolution Slider Mobile Fix */
+    .revolution-slider {
+        height: 400px !important;
+        width: 100% !important;
+        overflow: hidden;
+    }
+    
+    .bannercontainer {
+        height: 400px !important;
+        width: 100% !important;
+    }
+    
+    .banner {
+        height: 400px !important;
+        width: 100% !important;
+    }
+    
+    .banner ul {
+        height: 400px !important;
+        width: 100% !important;
+    }
+    
+    .banner ul li {
+        height: 400px !important;
+        width: 100% !important;
+    }
+    
+    .banner ul li img {
+        height: 400px !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+    
+    /* Mobile slider text positioning */
+    .caption.bigtext {
+        font-size: 28px !important;
+        line-height: 1.2;
+        text-align: center;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 90% !important;
+        top: 100px !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+    
+    .caption.smalltext {
+        font-size: 16px !important;
+        text-align: center;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 90% !important;
+        top: 160px !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    }
+    
+    .caption .btn {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: 220px !important;
+        width: auto !important;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    
+    /* Reservation form */
+    #reservation-form .col-sm-4,
+    #reservation-form .col-sm-3,
+    #reservation-form .col-sm-2 {
+        margin-bottom: 15px;
+    }
+    
+/* MOBILE ROOM CARDS - OPTIMIZED FLIP FUNCTIONALITY */
+@media (max-width: 767px) {
+    .room-thumb {
+        max-width: 320px;
+        width: 100%;
+        perspective: 1000px;
+        cursor: pointer;
+    }
+    
+    .room-thumb .flip-container {
+        position: relative;
+        width: 100%;
+        height: 580px;
+        transition: transform 0.6s ease;
+        transform-style: preserve-3d;
+    }
+    
+    .room-thumb.flipped .flip-container {
+        transform: rotateY(180deg);
+    }
+    
+    .room-thumb .flip-front,
+    .room-thumb .flip-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .room-thumb .flip-back {
+        transform: rotateY(180deg);
+        background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+        color: #fff;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    
+    /* FLIP-BACK CONTENT OPTIMIZATION */
+    .room-thumb .flip-back .main {
+        text-align: center;
+        margin-bottom: 12px;
+        flex-shrink: 0;
+    }
+    
+    .room-thumb .flip-back .main h5 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        line-height: 1.2;
+    }
+    
+    .room-thumb .flip-back .price {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        line-height: 1.2;
+    }
+    
+    .room-thumb .flip-back .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+    
+    .room-thumb .flip-back .content p {
+        font-size: 12px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        flex-shrink: 0;
+    }
+    
+    .room-thumb .flip-back .content .row {
+        margin-bottom: 10px;
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .room-thumb .flip-back .content .row .col-xs-6 {
+        padding: 0 5px;
+    }
+    
+    .room-thumb .flip-back .content ul {
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 0;
+    }
+    
+    .room-thumb .flip-back .content ul li {
+        font-size: 11px;
+        padding: 1px 0;
+        position: relative;
+        padding-left: 14px;
+        line-height: 1.2;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    
+    .room-thumb .flip-back .content ul li:before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    
+    .room-thumb .flip-back .btn {
+        background: rgba(255,255,255,0.95);
+        color: #17a2b8;
+        border: 2px solid rgba(255,255,255,0.95);
+        font-weight: 600;
+        margin-top: 10px;
+        width: 100%;
+        padding: 8px;
+        font-size: 13px;
+        flex-shrink: 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    
+    .room-thumb .flip-back .btn:hover {
+        background: #fff;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    
+    .room-thumb img {
+        height: 220px;
+        object-fit: cover;
+        width: 100%;
+    }
+    /* LAYOUT OPTIMIZATIONS */
+    .rooms .col-sm-4 {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    
+    /* COMMON RESPONSIVE ELEMENTS */
+    .container { padding: 0 20px; }
+    
+    #reservation-form .col-sm-4,
+    #reservation-form .col-sm-3,
+    #reservation-form .col-sm-2 { margin-bottom: 15px; }
+    
+    .usp .col-sm-3 { margin-bottom: 30px; }
+    
+    .box-icon .circle {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+    
+    .virtual-tour {
+        padding: 50px 0 !important;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    
+    .tour-main { padding: 20px !important; }
+    
+    .testimonials .col-md-6,
+    .about .col-md-6 { margin-bottom: 40px; }
+    
+    .avatar-circle {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 18px !important;
+    }
+    
+    footer .col-md-3 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .footer-bottom .col-xs-6 {
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* EXTRA SMALL DEVICES OPTIMIZATION */
+    .container { padding: 0 15px; }
+    
+    /* Slider adjustments */
+    .revolution-slider,
+    .bannercontainer,
+    .banner,
+    .banner ul,
+    .banner ul li,
+    .banner ul li img { height: 320px !important; }
+    
+    .caption.bigtext { 
+        font-size: 24px !important; 
+        top: 80px !important;
+    }
+    .caption.smalltext { 
+        font-size: 14px !important; 
+        top: 130px !important;
+    }
+    .caption .btn {
+        top: 180px !important;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    /* Optimized elements */
+    .room-thumb img { height: 220px; }
+    .box-icon .circle { width: 70px; height: 70px; font-size: 20px; }
+    .box-icon h3 { font-size: 16px; }
+    .box-icon p { font-size: 13px; }
+}
+
+/* PERFORMANCE OPTIMIZATIONS */
+.navbar.navbar-fixed-top {
+    background: rgba(255,255,255,0.98) !important;
+    backdrop-filter: blur(15px);
+}
+</style>
+</header>
+<
+<!-- Filters -->
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<ul class="nav nav-pills" id="filters">
+	<li class="active"><a data-filter="*" href="#">All</a></li>
+	<li><a data-filter=".standard" href="#">Standard Room</a></li>
+	<li><a data-filter=".deluxe" href="#">Deluxe Room</a></li>
+	<li><a data-filter=".standardp" href="#">Deluxe Twin Room</a></li>
+	<li><a data-filter=".mini" href="#">Executive King</a></li>
+	<li><a data-filter=".executive" href="#">Executive Premium</a></li>
+	<li><a data-filter=".family" href="#">Family Room</a></li>
+	<li><a data-filter=".honey" href="#">Honey Moon Room</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- ALL ROOM CARDS -->
+<section class="rooms mt100">
+<div class="container">
+<div class="row room-list fadeIn appear">
+
+<!-- Standard Room -->
+<div class="col-sm-4 standard">
+<div class="room-thumb"><img alt="room 1" class="img-responsive" src="images/rooms/standard.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Standard Room</h5>
+<div class="price">RS 10000 + Tax<span>Big Discount Offer</span></div>
+</div>
+<div class="content">
+<p><span>Your best staying option is always Heaven Hotel</span>The bedrooms are designed to give guests the maximum comfort.</p>
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Welcome Drink</li>
+	<li>Incl. Breakfast</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport pickup</li>
+	<li>LED + 250 Channels</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="index.html">Book Now</a></div>
+</div>
+</div>
+</div>
+
+<!-- Deluxe Room -->
+<div class="col-sm-4 deluxe">
+<div class="room-thumb"><img alt="room 5" class="img-responsive" src="images/rooms/delux (2).jpg" />
+<div class="mask">
+<div class="main">
+<h5>Deluxe Room</h5>
+<div class="price">RS 12000 + Tax<span>Tax Inclusive offer</span></div>
+</div>
+<div class="content">
+<p><span>Your best staying option is always Heaven Hotel</span>The bedrooms are designed to give guests the maximum comfort.</p>
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Welcome Drink</li>
+	<li>Incl. Breakfast</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport pickup</li>
+	<li>LED + 250 Channels</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="index.html">Book Now</a></div>
+</div>
+</div>
+</div>
+
+<!-- Deluxe Twin Room -->
+<div class="col-sm-4 standardp">
+<div class="room-thumb"><img alt="room 5" class="img-responsive" src="images/rooms/standard_plus.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Deluxe Twin Room</h5>
+<div class="price">RS 12000 + Tax<span>Big Discount Offer</span></div>
+</div>
+<div class="content">
+<p><span>Your best staying option is always Heaven Hotel</span>The bedrooms are designed to give guests the maximum comfort.</p>
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Welcome Drink</li>
+	<li>Incl. Breakfast</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport pickup</li>
+	<li>LED + 250 Channels</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="index.html">Book Now</a></div>
+</div>
+</div>
+</div>
+
+<!-- Executive King -->
+<div class="col-sm-4 mini">
+<div class="room-thumb"><img alt="room 5" class="img-responsive" src="images/rooms/mini.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Executive King</h5>
+<div class="price">RS 14000 + Tax<span>Big Discount Offer</span></div>
+</div>
+<div class="content">
+<p><span>Your best staying option is always Heaven Hotel</span>The bedrooms are designed to give guests the maximum comfort.</p>
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Welcome Drink</li>
+	<li>Incl. Breakfast</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport pickup</li>
+	<li>LED + 250 Channels</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="index.html">Book Now</a></div>
+</div>
+</div>
+</div>
+
+<!-- Executive Premium -->
+<div class="col-sm-4 executive">
+<div class="room-thumb"><img alt="room 5" class="img-responsive" src="images/rooms/executive.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Executive Premium</h5>
+<div class="price">RS 16000 + Tax<span>Limited Rooms</span></div>
+</div>
+<div class="content">
+<p><span>Your best staying option is always Heaven Hotel</span>The bedrooms are designed to give guests the maximum comfort.</p>
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Welcome Drink</li>
+	<li>Incl. Breakfast</li>
+	<li>Tea Setup</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport pickup</li>
+	<li>LED + 250 Channels</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="index.html">Book Now</a></div>
+</div>
+</div>
+</div>
+
+<!-- Family Room -->
+<div class="col-sm-4 family">
+<div class="room-thumb"><img alt="room 6" class="img-responsive" src="images/rooms/family_room.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Family Room</h5>
+<div class="price">RS 10000 + Tax<span>Two Combine Rooms</span></div>
+</div>
+<div class="content">
+<p><span>Your best staying option is always Heaven Hotel</span>The bedrooms are designed to give guests the maximum comfort.</p>
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Welcome Drink</li>
+	<li>Incl. Breakfast</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport pickup</li>
+	<li>LED + 250 Channels</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="index.html">Book Now</a></div>
+</div>
+</div>
+</div>
+
+<!-- Celebratory Room -->
+<div class="col-sm-4 honey">
+<div class="room-thumb"><img alt="room 6" class="img-responsive" src="images/rooms/Celebratory room.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Celebratory Room</h5>
+<div class="price">Based on Event<span>Memorable Night</span></div>
+</div>
+<div class="content">
+<p><span>Your best staying option is always Heaven Hotel</span>The bedrooms are designed to give guests the maximum comfort.</p>
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Welcome Drink</li>
+	<li>Incl. Breakfast</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport pickup</li>
+	<li>LED + 250 Channels</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="index.html">Book Now</a></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Room Content / Overview Tables -->
+<section>
+<div class="container">
+<div class="row">
+<div class="col-sm-7 mt50">
+<h2 class="lined-heading"><span>Room Details</span></h2>
+<h3 class="mt50">Table overview</h3>
+<table class="table table-striped mt30">
+	<tbody>
+		<tr>
+			<td>Welcome Drink</td>
+			<td>Free Internet</td>
+			<td>Free Newspaper</td>
+		</tr>
+		<tr>
+			<td>Airport or Daewoo pick</td>
+			<td>Nice DHA view</td>
+			<td>Seperate Kids Bed</td>
+		</tr>
+		<tr>
+			<td>Pleasant Environment</td>
+			<td>Active Service</td>
+			<td>Breakfast included</td>
+		</tr>
+		<tr>
+			<td>Flat Screen TV</td>
+			<td>250+ Channels</td>
+			<td>Jacuzzi</td>
+		</tr>
+	</tbody>
+</table>
+<p class="mt50"></p>
+</div>
+
+<div class="col-sm-5 mt50">
+<h2 class="lined-heading"><span>Overview</span></h2>
+<ul class="nav nav-tabs">
+	<li class="active"><a data-toggle="tab" href="#overview">Overview</a></li>
+	<li><a data-toggle="tab" href="#facilities">Facilities</a></li>
+	<li><a data-toggle="tab" href="#extra">Extra</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade in active" id="overview">
+<p>Your best staying option is always Heaven Hotel for business or other, the bedrooms are designed to give guests the maximum comfort.</p>
+<p><img alt="food" class="pull-right" src="images/tab/197x147.gif" /> Our 44 rooms includes mini suites, executive suites, deluxe, twin, inter-connected & standard rooms. The rooms have been tastefully decorated and modernized while retaining their unmistakably traditional feel. You will feel at home here.</p>
+</div>
+<div class="tab-pane fade" id="facilities">Luxury en-suite bathrooms with exclusive toiletries, LEDs with satellite channels, WiFi Broadband internet access in all rooms and public areas. Digital telephone, Mini Bar, Safe deposit box, Selection of quality magazines, Plenty of hanging space, 24 hours Room service, same day laundry and dry cleaning service, Individually control thermostat Facilities In room for warm or cool.</div>
+<div class="tab-pane fade" id="extra">Rent a Car facility, Airline Booking.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Rooms -->
+
+<section class="rooms mt50">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h2 class="lined-heading"><span>Guests Favorite Rooms</span></h2>
+</div>
+<!-- Room -->
+
+<div class="col-sm-4">
+<div class="room-thumb"><img alt="room 1" class="img-responsive" src="images/rooms/executive.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Executive Suite</h5>
+
+<div class="price">RS 16000 + Tax<span>All season</span></div>
+</div>
+
+<div class="content">
+<p><span>Executive Suite with all modern facilities</span> The rooms are designed to give guests the maximum comfort.</p>
+
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Incl. breakfast</li>
+	<li>Welcome Drink</li>
+	<li>Tea Setup</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport Pickup</li>
+	<li>LED + 250 Channels</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="room-list.html">Read More</a></div>
+</div>
+</div>
+</div>
+<!-- Room -->
+
+<div class="col-sm-4">
+<div class="room-thumb"><img alt="room 2" class="img-responsive" src="images/rooms/deluxe.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Deluxe Room</h5>
+
+<div class="price">RS 12000 + Tax<span>a night</span></div>
+</div>
+
+<div class="content">
+<p><span>A modern designed room</span> Wide capacity with double bedroom.</p>
+
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Incl. breakfast</li>
+	<li>Welcome Drink</li>
+	<li>Daily Newspaper</li>
+</ul>
+</div>
+
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Free Wi-Fi</li>
+	<li>Airport Pickup</li>
+	<li>Extra Bed</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="room-list.html">Read More</a></div>
+</div>
+</div>
+</div>
+<!-- Room -->
+
+<div class="col-sm-4">
+<div class="room-thumb"><img alt="room 3" class="img-responsive" src="images/rooms/standard.jpg" />
+<div class="mask">
+<div class="main">
+<h5>Standard Room</h5>
+
+<div class="price">RS 10000 + Tax</small><span>Available Now!</span></div>
+</div>
+
+<div class="content">
+<p><span>A modern room in Heaven Hotel</span> Standard room with following facilities</p>
+
+<div class="row">
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Incl. breakfast</li>
+	<li>Welcome Drink</li>
+	<li>Free Wi-Fi</li>
+</ul>
+</div>
+
+<div class="col-xs-6">
+<ul class="list-unstyled">
+	<li>Daily Newspaper</li>
+	<li>Airport Pickup</li>
+	<li>Luxury Bathroom</li>
+</ul>
+</div>
+</div>
+<a class="btn btn-primary btn-block" href="room-list.html">Read More</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- USP's -->
+
+<section class="usp mt100">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h2 class="lined-heading"><span>Our Unique Services</span></h2>
+</div>
+
+<div class="col-sm-3 bounceIn appear" data-start="0">
+<div class="box-icon">
+<div class="circle"><i class="fa fa-glass"></i></div>
+
+<h3>Welcome Beverages</h3>
+
+<p>Complimentary traditional Pakistani chai, fresh juices, and premium coffee selections available upon arrival and throughout your stay.</p>
+<a href="restaurant.html">View Menu</a></div>
+</div>
+
+<div class="col-sm-3 bounceIn appear" data-start="400">
+<div class="box-icon">
+<div class="circle"><i class="fa fa-credit-card"></i></div>
+
+<h3>Flexible Payment</h3>
+
+<p>Book now and pay later with convenient payment options. We accept all major credit cards and offer installment plans for extended stays.</p>
+<a href="contact.html">Learn More</a></div>
+</div>
+
+<div class="col-sm-3 bounceIn appear" data-start="800">
+<div class="box-icon">
+<div class="circle"><i class="fa fa-cutlery"></i></div>
+
+<h3>24 Hour Restaurant</h3>
+
+<p>Authentic Pakistani and international cuisine available around the clock. Fresh meals prepared by our award-winning chefs using premium ingredients.</p>
+<a href="restaurant.html">View Restaurant</a></div>
+</div>
+
+<div class="col-sm-3 bounceIn appear" data-start="1200">
+<div class="box-icon">
+<div class="circle"><i class="fa fa-plus-square"></i></div>
+
+<h3>Fitness & Wellness</h3>
+
+<p>Modern gym facilities with cardio equipment, weight training, and wellness center. Personal trainer services available upon request.</p>
+<a href="#">Explore Facilities</a></div>
+</div>
+
+<div class="col-sm-3 bounceIn appear" data-start="1600">
+<div class="box-icon">
+<div class="circle"><i class="fa fa-car"></i></div>
+
+<h3>Airport Transfer</h3>
+
+<p>Complimentary pickup and drop-off service to Allama Iqbal International Airport. Professional drivers available 24/7 for your convenience.</p>
+<a href="contact.html">Book Transfer</a></div>
+</div>
+
+<div class="col-sm-3 bounceIn appear" data-start="2000">
+<div class="box-icon">
+<div class="circle"><i class="fa fa-users"></i></div>
+
+<h3>Business Facilities</h3>
+
+<p>Conference rooms, meeting halls, and event spaces with modern AV equipment. Perfect for corporate meetings, seminars, and celebrations.</p>
+<a href="business.html">View Facilities</a></div>
+</div>
+
+<div class="col-sm-3 bounceIn appear" data-start="2400">
+<div class="box-icon">
+<div class="circle"><i class="fa fa-signal"></i></div>
+
+<h3>High-Speed Wi-Fi</h3>
+
+<p>Complimentary high-speed internet throughout the hotel, smart TV with 250+ channels, and dedicated business center with printing facilities.</p>
+<a href="#">Tech Amenities</a></div>
+</div>
+
+<div class="col-sm-3 bounceIn appear" data-start="2800">
+<div class="box-icon">
+<div class="circle"><i class="fa fa-shield"></i></div>
+
+<h3>24/7 Security</h3>
+
+<p>Round-the-clock security surveillance, professional concierge services, safe deposit facilities, and dedicated guest assistance.</p>
+<a href="contact.html">Guest Services</a></div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Virtual Tour -->
+<section class="virtual-tour mt100" style="background: #f5f5f5; padding: 100px 0; border: 3px solid #add8e6; border-radius: 15px;">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center" style="margin-bottom: 50px;">
+<h2 class="lined-heading"><span>Virtual Hotel Experience</span></h2>
+<p class="lead" style="color: #666; font-size: 18px;">Explore every corner of Heaven Hotel from the comfort of your home</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<div class="tour-main" style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 2px solid #add8e6;">
+<div class="tour-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; background: #000; margin-bottom: 30px;">
+<iframe src="https://www.sqinteractive.com/SQ-Tours/heaven%20hotel%20360/" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+        allowfullscreen
+        title="Heaven Hotel 360 Virtual Tour">
+</iframe>
+</div>
+<div class="row">
+<div class="col-md-8">
+<h4 style="color: #333; margin-bottom: 15px;">Interactive 360° Experience</h4>
+<p style="color: #666; margin-bottom: 20px;">Navigate through our luxurious rooms, restaurant, lobby, and facilities using your mouse or touch controls. Click and drag to look around, use scroll to zoom.</p>
+<div class="tour-features" style="display: flex; flex-wrap: wrap; gap: 15px;">
+<span style="background: #f8f9fa; padding: 8px 15px; border-radius: 20px; font-size: 14px; color: #555;"><i class="fa fa-bed"></i> All Room Types</span>
+<span style="background: #f8f9fa; padding: 8px 15px; border-radius: 20px; font-size: 14px; color: #555;"><i class="fa fa-cutlery"></i> Restaurant</span>
+<span style="background: #f8f9fa; padding: 8px 15px; border-radius: 20px; font-size: 14px; color: #555;"><i class="fa fa-building"></i> Lobby & Facilities</span>
+</div>
+</div>
+<div class="col-md-4 text-right">
+<a href="https://www.sqinteractive.com/SQ-Tours/heaven%20hotel%20360/" target="_blank" class="btn btn-primary btn-lg" style="padding: 15px 30px; font-size: 16px; border-radius: 25px; margin-bottom: 10px; display: block;">
+<i class="fa fa-expand"></i> Full Screen Tour
+</a>
+<p style="color: #888; font-size: 13px; margin: 0;">Best experience on desktop & tablet</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Gallery -->
+
+<section class="gallery-slider mt100">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h2 class="lined-heading"><span>Gallery</span></h2>
+</div>
+</div>
+</div>
+
+<div class="owl-carousel" id="owl-gallery">
+<div class="item"><a data-rel="prettyPhoto[gallery1]" href="images/gallery/main/file1.jpg"><img alt="Image 1" src="images/gallery/main/file1.jpg" /></a></div>
+
+<div class="item"><a data-rel="prettyPhoto[gallery1]" href="images/gallery/main/file2.jpg"><img alt="Image 2" src="images/gallery/main/file2.jpg" /></a></div>
+
+<div class="item"><a data-rel="prettyPhoto[gallery1]" href="images/gallery/main/file3.jpg"><img alt="Image 3" src="images/gallery/main/file3.jpg" /></a></div>
+
+<div class="item"><a data-rel="prettyPhoto[gallery1]" href="images/gallery/main/file4.jpg"><img alt="Image 4" src="images/gallery/main/file4.jpg" /></a></div>
+
+<div class="item"><a data-rel="prettyPhoto[gallery1]" href="images/gallery/main/file5.jpg"><img alt="Image 1" src="images/gallery/main/file5.jpg" /></a></div>
+
+<div class="item"><a data-rel="prettyPhoto[gallery1]" href="images/gallery/main/file6.jpg"><img alt="Image 2" src="images/gallery/main/file6.jpg" /></a></div>
+
+<div class="item"><a data-rel="prettyPhoto[gallery1]" href="images/gallery/main/file2.jpg"><img alt="Image 3" src="images/gallery/main/file1.jpg" /></a></div>
+
+<div class="item"><a data-rel="prettyPhoto[gallery1]" href="images/gallery/main/file1.jpg"><img alt="Image 4" src="images/gallery/main/file2.jpg" /></a></div>
+</div>
+</section>
+
+<div class="container">
+<div class="row"><!-- Testimonials -->
+<section class="testimonials mt100">
+<div class="col-md-6">
+<h2 class="lined-heading bounceInLeft appear" data-start="0"><span>What Other Visitors Experienced</span></h2>
+
+<div class="owl-carousel" id="owl-reviews">
+<div class="item">
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">AB</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">Searched the internet and i found, booked and visited this hotel. Overall experience regarding hotel room and food taste, quality was superb.<span>Adrees Bhatti, Deluxe Room</span></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">ZH</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">Great hotel, excellent food experience, friendly staff, clean, relaxing... Yep i'm coming back! ;-) <span>Zain ul Hassan, Mini Suite</span></div>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">ZH</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">Such a nice place... Next time i will book a 3 weeks stay at this place. <span>Zain ul Hassan, Executive Suite</span></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">FK</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">By far the best hotel in the city! Location is nice and the service is great! <span>Fayaz Khan, Standard Room</span></div>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">SA</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">Outstanding hospitality and impeccable service! The staff went above and beyond to make our anniversary celebration memorable. The executive suite was luxurious and spotless.<span>Sarah Ahmed, Executive Suite</span></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">MH</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">Perfect location near DHA with easy airport access. The restaurant serves authentic Pakistani cuisine that rivals the best in Lahore. Highly recommend for business travelers.<span>Muhammad Hassan, Deluxe Room</span></div>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">AR</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">Exceptional value for money! The rooms are modern, clean, and well-equipped. The complimentary breakfast was delicious and the Wi-Fi was fast throughout our stay.<span>Ayesha Rashid, Standard Plus Room</span></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">OK</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">Stayed here during my business trip from Karachi. The conference facilities are top-notch and the 24/7 room service was incredibly convenient. Will definitely return!<span>Omar Khan, Mini Suite</span></div>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-2 col-xs-12">
+<div class="avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; margin: 0 auto;">FS</div>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+<div class="text-balloon">Heaven Hotel truly lives up to its name! The ambiance is peaceful, staff is courteous, and the gym facilities are well-maintained. Perfect for a relaxing weekend getaway.<span>Fatima Siddiqui, Deluxe Room</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About -->
+
+<section class="about mt100">
+<div class="col-md-6">
+<h2 class="lined-heading bounceInRight appear" data-start="800"><span>Heaven Hotel</span></h2>
+<!-- Nav tabs -->
+
+<ul class="nav nav-tabs">
+	<li class="active"><a data-toggle="tab" href="#hotel">Our hotel</a></li>
+	<li><a data-toggle="tab" href="#events">Events</a></li>
+	<li><a data-toggle="tab" href="#kids">Kids</a></li>
+	<li><a data-toggle="tab" href="#business">Business</a></li>
+</ul>
+<!-- Tab panes -->
+
+<div class="tab-content">
+<div class="tab-pane fade in active" id="hotel">
+<p>Welcome to one of the most innovative hotel, where art and originality, elegantly combine to offer you some rare spectacles.</p>
+
+<p><img alt="food" class="pull-right" src="images/tab/197x147.gif" /> Located in a busy district, the sparkling facade and chill environment will fill you with wonder. Imagine an experience created to meet your every desire, where you are much more than a name - where service is not just a word - it is a way of being. Prime location of Khayaban-e-Jinnah, DHA, Lahore Cantt., and distance from Airport is just 7km.</p>
+</div>
+
+<div class="tab-pane fade" id="events">We arrange all kind of events, Corporate Meeting, Seminar, Training Session, Wedding, Birthday or any other kind of get together.</div>
+
+<div class="tab-pane fade" id="kids">Birthday party with beautiful ballon arrangments and well decorated cake with your desired requirement.</div>
+
+<div class="tab-pane fade" id="business">...</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Footer -->
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-3">
+<h4>About Heaven Hotel</h4>
+
+<p>&ldquo;Heaven Hotel&rdquo; is the up-to-the-minute edition of staying options in the city of Lahore with 44 luxury guest rooms and ample business meeting facilities.<br />
+<br />
+Heaven Hotel is located on main boulevard, DHA Gate, Lahore Cantt. just a 7km away from airport.</p>
+</div>
+
+<div class="col-md-3 col-sm-3">
+<h4>Receive our newsletter</h4>
+
+<p>Our online newsletter keeps you informed about what we offer you day to day.</p>
+
+<form role="form">
+<div class="form-group"><input class="form-control" id="newsletter" name="newsletter" placeholder="Please enter your E-mail address" type="text" value="" /></div>
+<button class="btn btn-lg btn-black btn-block" type="submit">Submit</button></form>
+</div>
+
+<div class="col-md-3 col-sm-3">
+<h4>News updates</h4>
+
+<ul>
+	<li>HI TEA @ Rs.1699/- + Tax<br />
+	Nov 11-2024</li>
+	<li>Wedding Lunch&nbsp; &amp; Dinner @ Rs.1599/- + Tax<br />
+	Nov 11-2024</li>
+</ul>
+</div>
+
+<div class="col-md-3 col-sm-3">
+<h4>Address</h4>
+
+<address><strong>Heaven Hotel</strong><br />
+Khayaban-e-Jinnah, Main DHA Gate,<br />
+Lahore Cant. Pakistan.<br />
+<abbr title="Phone">P:</abbr> <a href="#">+92 42 35899815</a><br />
+<abbr title="Email">E:</abbr> <a href="mailto:rsvn@heavenhotel.com.pk">rsvn@heavenhotel.com.pk</a><br />
+<abbr title="Website">W:</abbr> <a href="#">www.heavenhotel.com.pk</a><br />
+<abbr title="Facebook">F:</abbr> <a href="https://www.facebook.com/heavenhotelrestaurant" target="_blank">www.facebook.com/Heavenhotelrestaurant</a></address>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom">
+<div class="container">
+<div class="row">
+<div class="col-xs-6">&copy; 2024 Heaven Hotel All Rights Reserved</div>
+
+<div class="col-xs-6 text-right">
+<ul>
+	<li><a href="contact.html">Contact Now!</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Go-top Button -->
+
+<div id="go-top"></div>
+</body>
+</html>

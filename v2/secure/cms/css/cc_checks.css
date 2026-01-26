@@ -1,0 +1,68 @@
+h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	color: #666;
+	padding-top:0px;
+	margin-top:0px;
+}
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+a {
+	color: #36C;
+	text-decoration: none;
+}
+a:hover {
+	color: #C60;
+	text-decoration: underline;
+}
+.ok
+{
+	color:#060;
+	font-size:12px;
+}
+
+.tbl_listing 
+{
+	border:solid 1px #CCC;
+}
+.tbl_listing th
+{
+	text-align:left;
+	background-color:#CCC;
+}
+.tbl_listing .sel
+{
+	background-color:#EEE;
+}
+
+.tbl_quote td
+{
+	border-bottom:solid 1px #EEE;
+	border-left:solid 1px #EEE;	
+}
+
+/*** forms ***/
+
+form				{ width: 100%; }
+label				{ line-height: 22px; cursor: pointer; }
+label:hover			{ color: #333333; }
+input.checkbox			{ display: inline; position: relative; left: 1px; top: 1px;}
+input.radio			{ display: inline; position: relative; left: -1px; top: 1px;}
+input.text			{ display: inline; border: 1px solid #B8B8B8; font-size: 12px; font-family: arial; color: #333333; padding: 2px 4px 2px 4px; }
+input.submit			{ display: inline; border-width: 0px; font-size: 11px; font-family: arial; color: #FFFFFF; font-weight: bold; cursor: pointer; background: url('../images/but_active.gif') top left repeat-x ; padding: 3px 10px 3px 10px; }
+input.form-file                 { display: inline; height: auto; font-size: 12px !important; }
+select				{ display: inline; border: 1px solid #B8B8B8; font-size: 12px; font-family: arial; color: #333333; height: 22px; padding: 2px; }
+textarea			{ display: inline; border: 1px solid #B8B8B8; font-size: 12px; font-family: arial; color: #333333; padding: 4px; }
+
+.form-label			{ display: block; width: 100px; }
+.form-field			{ padding-bottom: 5px; }
+.data_row {
+	background-color: #EEE;
+}
+
+.required			{ color: #FF0000; font-weight: bold; }

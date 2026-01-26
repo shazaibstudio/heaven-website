@@ -1,0 +1,27 @@
+RewriteEngine On
+
+#RewriteBase /
+RewriteBase /v2/
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteRule ^detail-(.*).html$ room-detail.php?slug=$1 [NC,QSA]
+
+RewriteRule ^index.html$ index.php [NC,QSA]
+RewriteRule ^contact.html$ contact.php [NC,QSA]
+RewriteRule ^business.html$ business.php [NC,QSA]
+RewriteRule ^event.html$ event.php [NC,QSA]
+RewriteRule ^restaurant.html$ restaurant.php [NC,QSA]
+RewriteRule ^room-list.html$ room-list.php [NC,QSA]
+RewriteRule ^policies.html$ tnc.php [NC,QSA]
+
+RewriteRule ^reservation-overview.html$ cart.php [NC,QSA]
+RewriteRule ^billing-details.html$ billing.php [NC,QSA]
+RewriteRule ^confirm-reservation.html$ confirm.php [NC,QSA]
+RewriteRule ^remove-room-(.*).html$ cart.php?cmd=remove&index=$1 [NC,QSA]
+RewriteRule ^payment-successful.html$ thank-you.php?cmd=save-order [NC,QSA]
+RewriteRule ^payment-successful2.html$ save_manual.php [NC,QSA]
+RewriteRule ^thank-you.html$ thank-you.php?cmd=thanks [NC,QSA]
+
+RewriteRule ^open/(.*)/(.*)/?$ open_link.php?id=$1&link=$2 [NC,QSA]

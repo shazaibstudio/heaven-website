@@ -1,0 +1,1 @@
+<? if(isset($db)) $db->Close(); ?>
